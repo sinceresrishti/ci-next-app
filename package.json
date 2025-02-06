@@ -1,6 +1,7 @@
 {
   "name": "bms",
   "private": true,
+  "type": "module",
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
@@ -8,17 +9,16 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
-    "@types/express": "^5.0.0",
-    "@types/ws": "^8.5.14",
     "prettier": "^3.4.2",
+    "ts-node": "^10.9.2",
     "turbo": "^2.4.0",
-    "typescript": "5.7.3"
+    "typescript": "^5.7.3"
   },
   "packageManager": "pnpm@9.0.0",
   "engines": {
     "node": ">=18"
   },
   "dependencies": {
-    "express": "^4.21.2"
+    "esm": "^3.2.25"
   }
 }

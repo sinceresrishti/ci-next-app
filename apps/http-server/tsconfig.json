@@ -1,7 +1,12 @@
 {
   "extends": "@repo/typescript-config/base.json",
   "compilerOptions": {
-    "rootDir": "./src",
-    "outDir": "./dist"
+    "module": "NodeNext", // Must match moduleResolution
+    "moduleResolution": "NodeNext", // or "Node16"
+    "outDir": "dist",
+    "rootDir": "src",
+    "target": "ESNext", // or "ES2022", "ES2020", etc.
+    "esModuleInterop": true, // Helps with interoperability between CommonJS and ES Modules
+    "strict": true // Recommended for type safety
   }
 }
